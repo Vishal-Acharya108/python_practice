@@ -5,8 +5,6 @@ def check_references():
 
     print(f"ID of A: {id(list_a)}")
     print(f"ID of B: {id(list_b)}")
-    
-    # Modifying B affects A because they point to the same memory address
     list_b.append(4)
     print(f"List A after modifying B: {list_a}")
     list_b = [10, 20]
@@ -14,4 +12,5 @@ def check_references():
     print(f"List A remains: {list_a}")
 
 check_references()
+
 
