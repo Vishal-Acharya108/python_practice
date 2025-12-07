@@ -13,3 +13,30 @@
 {1,2,3,4}.issuperset({1,2,3,4})
 
 [1,2,3}>=({1,2,3})
+
+{3,4,5}.issubset{3,4,5,6}
+
+{3,4,5}.isdisjoint{3,4,5,6}
+
+2 not in {1,2,3} # False
+s={1,2,3}
+s.add(4)
+s.discard(5)
+
+a={1,2,3,4,5,6,7,8,9}
+b={7,5,6,9}
+a.difference(b)
+
+set()
+
+b.isdisjoin(a)
+
+
+
+
+
+   
+
+
+
+
