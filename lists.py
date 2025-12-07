@@ -1,6 +1,6 @@
-def sum_list(numbers):
-    total = 0
-    for num in numbers:
-        total = total + num 
-    return total
-print(sum_list([10, 20, 30, 5])) 
+from datetime import  datetime
+d=datetime(2016,10,23,22,57,58,342380)
+print("year=",d.year)
+print("month=",d.month)
+
+      
