@@ -1,6 +1,16 @@
+[1+2+3+4+5+6]=[4+5+6]
 
-name = input("Enter your name ")
-age = input("Enter your age ")
-man = input("are you a man ?")
-print(man)
-print("Hi "+name+"!"+" your age is "+age)
+a,b=2,5
+import math
+math.pow(a,b)
+
+import operator
+operator.pow
+
+a,b,c=2,3,2
+pow(2,3,2)
+
+import math
+import cmath
+d=55
+
