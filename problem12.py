@@ -4,3 +4,8 @@ for i in range(5):
 
     print("")
 
+for n in range(10):
+    1+=10
+    print(n*10)
+
+
