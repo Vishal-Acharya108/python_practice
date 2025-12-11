@@ -1,7 +1,22 @@
-a = {23,5,1,12,4,6,7}
-b = {6,11,12,4,5,2,15,21,22,33}
-d = {7,8,9,6,5,4,1,2,3,10}
+import pandas as pd
+import numpy as np
 
-c = b.difference(a)
-print(c) 
+# Creating data with missing values (NaN)
+data = {
+    'Product': ['A', 'B', 'C', 'D', 'E'],
+    'Sales': [100, np.nan, 150, np.nan, 200],
+    'Region': ['North', 'South', np.nan, 'West', 'North']
+}
+df = pd.DataFrame(data)
 
+print("--- Original Data ---")
+print(df)
+
+# Fill missing numeric values with the Mean
+df['Sales'] = df['Sales'].fillna(df['Sales'].mean())
+
+# Drop rows where Region is missing
+df = df.dropna(subset=['Region'])
+
+print("\n--- Cleaned Data ---")
+print(df)
