@@ -1,6 +1,12 @@
-name =  input("Enter your name ")
-age = int(input("Enter your age "))
-if(age>=18):
-    print("Hi "+name+" You can take part in votting")
-else:
-    print("Sorry, you cannot take part because your age is"+str(age)+" year, you will be able to participate after "+str(18-age)+" year")
+import matplotlib.pyplot as plt
+
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
+stock_price = [100, 102, 105, 103, 108]
+
+plt.figure(figsize=(8, 4))
+plt.plot(days, stock_price, marker='o', color='blue', linestyle='--')
+plt.title('Stock Price Trend')
+plt.xlabel('Day')
+plt.ylabel('Price ($)')
+plt.grid(True)
+plt.show()
