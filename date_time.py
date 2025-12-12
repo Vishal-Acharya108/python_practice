@@ -13,5 +13,8 @@ t1 = timedelta(weeks=3, days=5, hours=2, seconds=12)
 t2 = timedelta(days=5, hours=4, minutes=6, seconds=45)
 t3 = t1 - t2
 print("t3=",t3)
+file = open('test.txt', 'w')
 
+file.write("This is a write operation")
+file.write("Hello!! Thanks for joining the program")
 
