@@ -13,3 +13,8 @@ def formatting_magic():
     print(f"Date: {date:%B %d, %Y}") # Custom date format inline
 
 formatting_magic()
+
+with open('test.txt', 'a+') as file:
+    file.write("\n")
+    file.write("This is a write operation")
+
