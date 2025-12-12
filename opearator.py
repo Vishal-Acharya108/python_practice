@@ -1,41 +1,17 @@
-{,1,2,3,4,5,6,7}.intersection([3,4,5,6,7})
+list_1 = ["Automobiles", "Honda", "Benz", "Maruti", "Kia"]
 
-{3,4,5}&{3,4,5,6}
+list_2 = []
 
-{3,4,5}.union{3,4,5,6}
-
-{1,2,3,4,5,6}|{3,4,5,6}
-
-{1,2,3,,4,5).difference({2,3,5)}
-
-{1,2,3,4,5}-{2,3,4}
-
-{1,2,3,4}.issuperset({1,2,3,4})
-
-[1,2,3}>=({1,2,3})
-
-{3,4,5}.issubset{3,4,5,6}
-
-{3,4,5}.isdisjoint{3,4,5,6}
-
-2 not in {1,2,3} # False
-s={1,2,3}
-s.add(4)
-s.discard(5)
-
-a={1,2,3,4,5,6,7,8,9}
-b={7,5,6,9}
-a.difference(b)
-
-set()
-
-b.isdisjoin(a)
-
+for i in list_1:
+    list_2.append(i)
+    
+print(list_2)
 
 
 
 
    
+
 
 
 
